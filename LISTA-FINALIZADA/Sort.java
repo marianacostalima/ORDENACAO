@@ -7,10 +7,10 @@ public class Sort {
     final static Random gerador = new Random();
 
     public static void main(String[] args) {
-        int vet[] = new int[10];
+        int vet[] = new int[10000];
         
 
-        gerar();
+        //gerar();
 
         vet = lerVetor(vet);
         
@@ -25,8 +25,8 @@ public class Sort {
 
     //gerar número aleatorio
     public static void gerar() {
-        for (int i = 0; i < 10; i++) {
-            System.out.println(gerador.nextInt(10));
+        for (int i = 0; i < 10000; i++) {
+            System.out.println(gerador.nextInt(10000));
         }
     }
 
@@ -88,26 +88,30 @@ public class Sort {
             }
 
         }
-        print2(vet, contador, movimentacao);
+        print1(vet, contador, movimentacao);
 
     }
     //imprimindo o Bubble
     public static void print(int[] vet,int contador, int movimentacao) {
+        System.out.println("Imprimindo o BUBBLE: ");
+        System.out.println();
         System.out.println("Foram realizadas " + movimentacao + " movimentações!");
-        System.out.println("Foram realizadas " + contador + " contadores!");
+        System.out.println("Foram realizadas" + contador + " comparações!");
 
         for (int i = 0; i < vet.length; i++) {
             System.out.println(vet[i]);
         }
         System.out.println();
     }
-    public static void print2(int[] vet, int contador, int movimentacao) {
+    public static void print1(int[] vet, int contador, int movimentacao) {
         System.out.println("Foram realizadas " + movimentacao + " movimentações!");
-        System.out.println("Foram realizadas " + contador + " contadores!");
+        System.out.println("Foram realizadas " + contador + " comparações!");
         
         for (int j = 0; j < vet.length; j++) {
             System.out.println(vet[j]);
         }
+        System.out.println();
+        System.out.println();
     }
 
 
@@ -128,7 +132,7 @@ public class Sort {
             movimentacao += 3;
             
         }
-        print(vet, contador, movimentacao);
+        print2(vet, contador, movimentacao);
     }
     public static void insertionSortDec(int[] vet) {
         int contador = 0;
@@ -146,25 +150,29 @@ public class Sort {
             movimentacao += 3;
             
         }
-        print2(vet, contador, movimentacao);
+        print3(vet, contador, movimentacao);
     }
     //imprimindo o insertion
-    public static void print(int[] vet, int contador, int movimentacao) {
+    public static void print2(int[] vet, int contador, int movimentacao) {
+        System.out.println("Imprimindo o INSERTION: ");
+        System.out.println();
         System.out.println("Foram realizadas " + movimentacao + " movimentações!");
-        System.out.println("Foram realizadas " + contador + " contadores!");
+        System.out.println("Foram realizadas " + contador + " comparações!");
 
         for (int i = 0; i < vet.length; i++) {
             System.out.println(vet[i]);
         }
         System.out.println();
     }
-    public static void print2(int[] vet, int contador, int movimentacao) {
+    public static void print3(int[] vet, int contador, int movimentacao) {
         System.out.println("Foram realizadas " + movimentacao + " movimentações!");
-        System.out.println("Foram realizadas " + contador + " contadores!");
+        System.out.println("Foram realizadas " + contador + " comparações!");
 
         for (int j = 0; j < vet.length; j++) {
             System.out.println(vet[j]);
         }
+        System.out.println();
+        System.out.println();
     }
 
 
@@ -188,7 +196,7 @@ public class Sort {
                 movimentacao += 3;
             }
         }
-        print(vet, contador, movimentacao);
+        print4(vet, contador, movimentacao);
     }
     public static void selectionSortDec(int[] vet) {
         int contador = 0;
@@ -209,25 +217,29 @@ public class Sort {
                 movimentacao += 3;
             }
         }
-        print2(vet, contador, movimentacao);
+        print5(vet, contador, movimentacao);
     }
     //imprimir o selection
-    public static void print(int[] vet, int contador, int movimentacao) {
+    public static void print4(int[] vet, int contador, int movimentacao) {
+        System.out.println("Imprimindo o SELECTION: ");
+        System.out.println();
         System.out.println("Foram realizadas " + movimentacao + " movimentações!");
-        System.out.println("Foram realizadas " + contador + " contadores!");
+        System.out.println("Foram realizadas " + contador + " comparações!");
 
         for (int i = 0; i < vet.length; i++) {
             System.out.println(vet[i]);
         }
         System.out.println();
     }
-    public static void print2(int[] vet, int contador, int movimentacao) {
+    public static void print5(int[] vet, int contador, int movimentacao) {
         System.out.println("Foram realizadas " + movimentacao + " movimentações!");
-        System.out.println("Foram realizadas " + contador + " contadores!");
+        System.out.println("Foram realizadas " + contador + " comparações!");
 
         for (int j = 0; j < vet.length; j++) {
             System.out.println(vet[j]);
         }
+        System.out.println();
+        System.out.println();
     }
 
 }
