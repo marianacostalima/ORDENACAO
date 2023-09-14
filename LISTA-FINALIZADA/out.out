@@ -1,0 +1,89 @@
+Imprimindo o BUBBLE: 
+
+Foram realizadas 75 movimentações!
+Foram realizadas67 comparações!
+0
+2
+2
+3
+3
+5
+6
+6
+7
+8
+
+Foram realizadas 126 movimentações!
+Foram realizadas 87 comparações!
+8
+7
+6
+6
+5
+3
+3
+2
+2
+0
+
+
+Imprimindo o INSERTION: 
+
+Foram realizadas 27 movimentações!
+Foram realizadas 51 comparações!
+0
+2
+2
+3
+3
+5
+6
+6
+7
+8
+
+Foram realizadas 27 movimentações!
+Foram realizadas 51 comparações!
+8
+7
+6
+6
+5
+3
+3
+2
+2
+0
+
+
+Imprimindo o SELECTION: 
+
+Foram realizadas 21 movimentações!
+Foram realizadas 79 comparações!
+0
+2
+2
+3
+3
+5
+6
+6
+7
+8
+
+Foram realizadas 18 movimentações!
+Foram realizadas 77 comparações!
+8
+7
+6
+6
+5
+3
+3
+2
+2
+0
+
+
+//javac Sort.java
+//java Sort < in.in > out.out
